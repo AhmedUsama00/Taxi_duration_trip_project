@@ -40,11 +40,4 @@ If you want to improve the model further, consider the following techniques:
 
 ---
 
-## CV / Portfolio Summary
-*You can copy and paste this bullet point into your CV:*
 
-**Machine Learning Engineer | NYC Taxi Trip Duration Predictor**
-* Designed and implemented an end-to-end, modularized Machine Learning pipeline in Python to predict NYC taxi trip durations.
-* Engineered advanced spatial features (Manhattan distance, Haversine, Bearing) and temporal features to capture complex urban traffic patterns.
-* Trained and tuned an XGBoost regression model using logarithmic target transformation to handle skewed distributions, achieving a highly competitive Validation RMSE.
-* Applied software engineering best practices by structuring the codebase into maintainable modules (`data`, `features`, `models`) orchestrating the workflow through a clean Jupyter Notebook interface.
