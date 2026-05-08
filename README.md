@@ -26,18 +26,3 @@ Feature engineering is the core of this project, transforming raw timestamps and
 
 ### 4. Prediction (`src/models/predict_model.py`)
 - **`predict(model, X_test)`**: Feeds the unseen test data into the trained model, and applies the `exp(x) - 1` function to convert the logarithmic predictions back into actual seconds.
-
----
-
-## How to Improve the Model (Lower RMSE)
-*Note: In machine learning regression, a **lower** RMSE means your predictions are closer to the actual values.*
-
-If you want to improve the model further, consider the following techniques:
-1. **Hyperparameter Tuning:** Use `GridSearchCV` or `Optuna` to test different XGBoost parameters (like `max_depth`, `learning_rate`, or `n_estimators`).
-2. **External Data:** Merge the dataset with NYC weather data (rain/snow slows down traffic) or holiday datasets.
-3. **Try LightGBM or CatBoost:** Add another script in `src/models/` for LightGBM. Sometimes ensembling (averaging the predictions of XGBoost and LightGBM) yields the best results.
-4. **Geospatial Clustering:** Use KMeans clustering on the pickup coordinates to group neighborhoods together.
-
----
-
-
